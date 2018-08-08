@@ -1,0 +1,1902 @@
+﻿/*
+
+Volton Template
+
+http://www.templatemo.com/tm-441-volton
+
+*/
+
+@font-face {
+  font-family: 'robotolight';
+  src: url("../fonts/Roboto-Light-webfont.eot");
+  src: url("../fonts/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light-webfont.woff") format("woff"), url("../fonts/Roboto-Light-webfont.ttf") format("truetype"), url("../fonts/Roboto-Light-webfont.svg#robotolight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotoregular';
+  src: url("../fonts/Roboto-Regular-webfont.eot");
+  src: url("../fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotobold';
+  src: url("../fonts/Roboto-Bold-webfont.eot");
+  src: url("../fonts/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold-webfont.woff") format("woff"), url("../fonts/Roboto-Bold-webfont.ttf") format("truetype"), url("../fonts/Roboto-Bold-webfont.svg#robotobold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*---------------------------------------------------------
+ 1. Reset
+-------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+.blue {
+	color: #06C;
+}
+
+.green {
+	color: #090;
+}
+
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button,
+input {
+  line-height: normal;
+  *overflow: visible;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button, input[type=button], input[type=reset], input[type=submit] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+}
+
+input[type=search]:-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/*---------------------------------------------------------
+ 2. Basic Style
+-------------------------------------------------------- */
+body {
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+  font-family: 'robotoregular';
+  overflow-x: hidden;
+}
+
+a {
+  color: #006699;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  text-decoration: none !important;
+}
+a:hover {
+  color: #555555;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #555555;
+}
+
+::-webkit-input-placeholder {
+  color: #999999;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #999999;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #999999;
+}
+
+:-ms-input-placeholder {
+  color: #999999;
+}
+
+.main-content,
+.banner-bg {
+  float: right;
+  width: 77%;
+}
+@media screen and (max-width: 1290px) {
+  .main-content,
+  .banner-bg {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .main-content,
+  .banner-bg {
+    width: 100%;
+  }
+}
+
+.content-wrapper {
+  padding: 0 80px;
+}
+@media screen and (max-width: 992px) {
+  .content-wrapper {
+    padding: 0 30px;
+  }
+}
+
+h4.widget-title {
+  font-size: 16px;
+  font-family: 'robotobold';
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+hr {
+  position: relative;
+  outline: 0;
+  border: 0;
+  width: 100%;
+  height: 4px;
+  background: #dddddd;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.page-section {
+  padding-top: 80px;
+}
+
+/*---------------------------------------------------------
+ 3. Header
+-------------------------------------------------------- */
+.sidebar-menu {
+  float: left;
+  width: 23%;
+  height: 100%;
+  position: fixed;
+  background-color: #5f6d7e;
+  color: white;
+  overflow-y: hidden;
+}
+@media screen and (max-width: 1290px) {
+  .sidebar-menu {
+    overflow-y: scroll;
+    width: 30%;
+  }
+}
+
+.top-section {
+  padding: 40px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border: 4px solid white;
+  -webkit-border-radius: 75px;
+  border-radius: 75px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.profile-image img {
+  width: 100%;
+}
+
+h3.profile-title {
+  margin-bottom: 5px;
+  color: white;
+  font-size: 18px;
+  font-family: 'robotobold';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  text-align: left;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding-left: 15px;
+  border-bottom: 1px solid #888;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+  background-color: #005f5f;
+}
+
+.nav a.active {
+  background-color: #aaa;
+  color: #444;
+  cursor: default;
+}
+
+/* Sub Menus */
+.nav li li {
+  font-size: .8em;
+}
+
+/*******************************************
+   Style menu for larger screens
+
+   Using 650px (130px each * 5 items), but ems
+   or other values could be used depending on other factors
+********************************************/
+
+@media screen and (min-width: 650px) {
+.navigation {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  line-height: 1;
+}
+.navigation ul,
+
+.navigation ul li,
+
+.navigation ul ul {
+
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+ 
+
+.navigation ul {
+
+  position: relative;
+
+  z-index: 500;
+
+  float: left;
+
+}
+.navigation ul li {
+
+  float: left;
+
+  min-height: 0.05em;
+
+  line-height: 1em;
+
+  vertical-align: middle;
+
+  position: relative;
+}
+
+.navigation ul li.hover,
+
+.navigation ul li:hover {
+
+  position: relative;
+
+  z-index: 510;
+
+  cursor: default;
+
+}
+
+ 
+
+.navigation ul ul {
+
+  visibility: hidden;
+
+  position: absolute;
+
+  top: 100%;
+
+
+  left: 0px;
+
+  z-index: 520;
+
+  width: 100%;
+
+}
+
+ 
+
+.navigation ul ul li { float: none; }
+
+ 
+
+.navigation ul ul ul {
+
+  top: 0;
+
+  right: 0;
+
+}
+
+ 
+
+.navigation ul li:hover > ul { visibility: visible; }
+
+ 
+
+.navigation ul ul {
+
+  top: 0;
+
+  left: 99%;
+
+}
+
+ 
+
+.navigation ul li { float: none; }
+
+ 
+
+.navigation ul ul { margin-top: 0.05em; }
+
+ 
+
+.navigation {
+
+  width: 13em;
+
+  background: #333333;
+
+  font-family: 'roboto', Tahoma, Arial, sans-serif;
+
+  zoom: 1;
+
+}
+
+ 
+
+.navigation:before {
+
+  content: '';
+
+  display: block;
+
+}
+
+ 
+
+.navigation:after {
+
+  content: '';
+
+  display: table;
+
+  clear: both;
+
+}
+
+ 
+
+.navigation a {
+
+  display: block;
+
+  padding: 1em 1.3em;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+
+}
+
+ 
+
+.navigation > ul { width: 13em; }
+
+ 
+
+.navigation ul ul { width: 13em; }
+
+ 
+
+.navigation > ul > li > a {
+
+  border-right: 0.3em solid #34A65F;
+
+  color: #ffffff;
+
+}
+
+ 
+
+.navigation > ul > li > a:hover { color: #ffffff; }
+
+ 
+
+.navigation > ul > li a:hover,
+
+.navigation > ul > li:hover a { background: #34A65F; }
+
+ 
+
+.navigation li { position: relative; }
+
+ 
+
+.navigation ul li.has-sub > a:after {
+
+  content: '»';
+
+  position: absolute;
+
+  right: 1em;
+
+}
+
+ 
+
+.navigation ul ul li.first {
+
+  -webkit-border-radius: 0 3px 0 0;
+
+  -moz-border-radius: 0 3px 0 0;
+
+  border-radius: 0 3px 0 0;
+
+}
+
+ 
+
+.navigation ul ul li.last {
+
+  -webkit-border-radius: 0 0 3px 0;
+
+  -moz-border-radius: 0 0 3px 0;
+
+  border-radius: 0 0 3px 0;
+
+  border-bottom: 0;
+
+}
+
+ 
+
+.navigation ul ul {
+
+  -webkit-border-radius: 0 3px 3px 0;
+
+  -moz-border-radius: 0 3px 3px 0;
+
+  border-radius: 0 3px 3px 0;
+
+}
+
+ 
+
+.navigation ul ul { border: 1px solid #34A65F; }
+
+ 
+
+.navigation ul ul a { color: #ffffff; }
+
+ 
+
+.navigation ul ul a:hover { color: #ffffff; }
+
+ 
+
+.navigation ul ul li { border-bottom: 1px solid #0F8A5F; }
+
+ 
+
+.navigation ul ul li:hover > a {
+
+  background: #4eb1ff;
+
+  color: #ffffff;
+
+}
+
+ 
+
+.navigation.align-right > ul > li > a {
+
+  border-left: 0.3em solid #34A65F;
+
+  border-right: none;
+
+}
+
+ 
+
+.navigation.align-right { float: right; }
+
+ 
+
+.navigation.align-right li { text-align: right; }
+
+ 
+
+.navigation.align-right ul li.has-sub > a:before {
+
+  content: '+';
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 15px;
+
+  margin-top: -6px;
+
+}
+
+ 
+
+.navigation.align-right ul li.has-sub > a:after { content: none; }
+162
+ 
+163
+.navigation.align-right ul ul {
+
+  visibility: hidden;
+
+  position: absolute;
+
+  top: 0;
+
+  left: -100%;
+
+  z-index: 598;
+
+  width: 100%;
+
+}
+
+ 
+
+.navigation.align-right ul ul li.first {
+
+  -webkit-border-radius: 3px 0 0 0;
+
+  -moz-border-radius: 3px 0 0 0;
+
+  border-radius: 3px 0 0 0;
+
+}
+
+ 
+
+.navigation.align-right ul ul li.last {
+
+  -webkit-border-radius: 0 0 0 3px;
+
+  -moz-border-radius: 0 0 0 3px;
+
+  border-radius: 0 0 0 3px;
+
+}
+
+ 
+
+.navigation.align-right ul ul {
+
+  -webkit-border-radius: 3px 0 0 3px;
+
+  -moz-border-radius: 3px 0 0 3px;
+
+  border-radius: 3px 0 0 3px;
+
+}
+.navigation {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  line-height: 1;
+}
+.navigation ul,
+
+.navigation ul li,
+
+.navigation ul ul {
+
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+ 
+
+.navigation ul {
+
+  position: relative;
+
+  z-index: 500;
+
+  float: left;
+
+}
+.navigation ul li {
+
+  float: left;
+
+  min-height: 0.05em;
+
+  line-height: 1em;
+
+  vertical-align: middle;
+
+  position: relative;
+}
+
+.navigation ul li.hover,
+
+.navigation ul li:hover {
+
+  position: relative;
+
+  z-index: 510;
+
+  cursor: default;
+
+}
+
+ 
+
+.navigation ul ul {
+
+  visibility: hidden;
+
+  position: absolute;
+
+  top: 100%;
+
+
+  left: 0px;
+
+  z-index: 520;
+
+  width: 100%;
+
+}
+
+ 
+
+.navigation ul ul li { float: none; }
+
+ 
+
+.navigation ul ul ul {
+
+  top: 0;
+
+  right: 0;
+
+}
+
+ 
+
+.navigation ul li:hover > ul { visibility: visible; }
+
+ 
+
+.navigation ul ul {
+
+  top: 0;
+
+  left: 99%;
+
+}
+
+ 
+
+.navigation ul li { float: none; }
+
+ 
+
+.navigation ul ul { margin-top: 0.05em; }
+
+ 
+
+.navigation {
+
+  width: 13em;
+
+  background: #333333;
+
+  font-family: 'roboto', Tahoma, Arial, sans-serif;
+
+  zoom: 1;
+
+}
+
+ 
+
+.navigation:before {
+
+  content: '';
+
+  display: block;
+
+}
+
+ 
+
+.navigation:after {
+
+  content: '';
+
+  display: table;
+
+  clear: both;
+
+}
+
+ 
+
+.navigation a {
+
+  display: block;
+
+  padding: 1em 1.3em;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+
+}
+
+ 
+
+.navigation > ul { width: 13em; }
+
+ 
+
+.navigation ul ul { width: 13em; }
+
+ 
+
+.navigation > ul > li > a {
+
+  border-right: 0.3em solid #34A65F;
+
+  color: #ffffff;
+
+}
+
+ 
+
+.navigation > ul > li > a:hover { color: #ffffff; }
+
+ 
+
+.navigation > ul > li a:hover,
+
+.navigation > ul > li:hover a { background: #34A65F; }
+
+ 
+
+.navigation li { position: relative; }
+
+ 
+
+.navigation ul li.has-sub > a:after {
+
+  content: '»';
+
+  position: absolute;
+
+  right: 1em;
+
+}
+
+ 
+
+.navigation ul ul li.first {
+
+  -webkit-border-radius: 0 3px 0 0;
+
+  -moz-border-radius: 0 3px 0 0;
+
+  border-radius: 0 3px 0 0;
+
+}
+
+ 
+
+.navigation ul ul li.last {
+
+  -webkit-border-radius: 0 0 3px 0;
+
+  -moz-border-radius: 0 0 3px 0;
+
+  border-radius: 0 0 3px 0;
+
+  border-bottom: 0;
+
+}
+
+ 
+
+.navigation ul ul {
+
+  -webkit-border-radius: 0 3px 3px 0;
+
+  -moz-border-radius: 0 3px 3px 0;
+
+  border-radius: 0 3px 3px 0;
+
+}
+
+ 
+
+.navigation ul ul { border: 1px solid #34A65F; }
+
+ 
+
+.navigation ul ul a { color: #ffffff; }
+
+ 
+
+.navigation ul ul a:hover { color: #ffffff; }
+
+ 
+
+.navigation ul ul li { border-bottom: 1px solid #0F8A5F; }
+
+ 
+
+.navigation ul ul li:hover > a {
+
+  background: #4eb1ff;
+
+  color: #ffffff;
+
+}
+
+ 
+
+.navigation.align-right > ul > li > a {
+
+  border-left: 0.3em solid #34A65F;
+
+  border-right: none;
+
+}
+
+ 
+
+.navigation.align-right { float: right; }
+
+ 
+
+.navigation.align-right li { text-align: right; }
+
+ 
+
+.navigation.align-right ul li.has-sub > a:before {
+
+  content: '+';
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 15px;
+
+  margin-top: -6px;
+
+}
+
+ 
+
+.navigation.align-right ul li.has-sub > a:after { content: none; }
+162
+ 
+163
+.navigation.align-right ul ul {
+
+  visibility: hidden;
+
+  position: absolute;
+
+  top: 0;
+
+  left: -100%;
+
+  z-index: 598;
+
+  width: 100%;
+
+}
+
+ 
+
+.navigation.align-right ul ul li.first {
+
+  -webkit-border-radius: 3px 0 0 0;
+
+  -moz-border-radius: 3px 0 0 0;
+
+  border-radius: 3px 0 0 0;
+
+}
+
+ 
+
+.navigation.align-right ul ul li.last {
+
+  -webkit-border-radius: 0 0 0 3px;
+
+  -moz-border-radius: 0 0 0 3px;
+
+  border-radius: 0 0 0 3px;
+
+}
+
+ 
+
+.navigation.align-right ul ul {
+
+  -webkit-border-radius: 3px 0 0 3px;
+
+  -moz-border-radius: 3px 0 0 3px;
+
+  border-radius: 3px 0 0 3px;
+
+}
+
+}
+.social-icons {
+  display: block;
+  padding: 30px 40px;
+}
+.social-icons li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.social-icons a {
+  font-size: 18px;
+  color: white;
+}
+.social-icons a:hover {
+  color: #282e35;
+}
+
+.responsive-header {
+  background: #5f6d7e;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .responsive-header .main-navigation {
+    margin-top: 10px;
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .responsive-header p {
+    color: white;
+  }
+}
+@media screen and (max-width: 992px) {
+  .responsive-header .profile-image {
+    float: left;
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 30px;
+  }
+  .responsive-header .profile-content {
+    text-align: left;
+    margin-top: 30px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .top-section {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main-navigation a {
+    padding: 10px;
+  }
+  .main-navigation a.active {
+    background: #5f6d7e !important;
+  }
+  .main-navigation a:hover {
+    background: #5f6d7e !important;
+  }
+}
+
+.toggle-menu {
+  width: 100%;
+  display: block;
+  padding: 20px;
+  margin-top: 30px;
+  background: #6cc0f7;
+  color: white;
+  font-size: 18px;
+}
+.toggle-menu:hover {
+  color: white;
+}
+
+/*---------------------------------------------------------
+ 4. Main Content
+-------------------------------------------------------- */
+/*------ banner ------ */
+.banner-bg {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/7.jpg");
+  background-repeat: no-repeat;
+  background-position: centre;
+  background-size: relative;
+  z-index: 2;
+}
+.banner-1 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/barrow.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-2 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/talgarth.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-3 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/denbigh.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-4 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/hellingly.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-5 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/westpark.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-6 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/sandhill.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+
+.banner-7 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/ilford.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-8 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/dawlish.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-9 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/notredame.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-10 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/tides.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-11 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/newport.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-12 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/rectory.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-13 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/salston.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-14 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/quality.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-15 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/seaton.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-16 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/yealm.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-17 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/leebay.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-18 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/predannack1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-19 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/hopecove.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-20 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/penhale.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-21 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/thomas.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-22 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/monkton.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-23 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/hoe.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-24 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/fremington.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-25 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/mountwise.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-26 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/cann.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-27 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/bovisands.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-28 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/holton.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-29 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/arthur.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-30 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/yeovilton.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-31 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/tawton.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-32 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/bourton.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-33 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/tonedale.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-34 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/tonemill.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-35 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/flour.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-36 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/plymouthclay.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-37 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/cornwall.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-38 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/hemmerdon.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-39 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/rendell.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-40 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/breakers.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-41 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/totnes.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-42 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/7.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-43 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/foods.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-44 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/coles.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-45 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/ottermill.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-46 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/pride.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-47 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/yelland.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-48 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/manamead.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-49 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/crookham.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-50 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/wildwest.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-51 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/dunblobbin.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-52 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/shirehorse.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-53 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/aalen.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-54 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/ghost.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-55 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/train.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-56 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/bus1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-57 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/seaton1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-58 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/1906.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-59 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/rover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-60 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/mine.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-61 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/cooperage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-62 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/cremyll.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-63 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/academy.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-64 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/gunnislake.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-65 {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/millennium.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.banner-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(95, 109, 126, 0.4);
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.welcome-text {
+  position: relative;
+  z-index: 4;
+}
+.welcome-text h2 {
+  font-size: 42px;
+  font-family: 'robotobold';
+  color: white;
+  margin-bottom: 30px;
+}
+.welcome-text h5 {
+  font-size: 22px;
+  color: white;
+}
+
+/*------ about us ------ */
+.about-image {
+  overflow: hidden;
+  border: 4px solid #dddddd;
+  margin-bottom: 40px;
+}
+.about-image img {
+  width: 100%;
+  display: block;
+}
+
+/*------ projects ------ */
+.projects-holder {
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 40px;
+}
+.projects-holder .col-md-4,
+.projects-holder .col-md-4 {
+  padding-right: 1px;
+  padding-left: 1px;
+}
+
+.project-item {
+  width: 100%;
+  margin-bottom: 2px;
+  overflow: hidden;
+  position: relative;
+}
+.project-item img {
+  width: 100%;
+  display: block;
+}
+.project-item:hover .project-hover {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.project-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 40px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  visibility: 0;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+.project-hover .inside {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 30px;
+}
+.project-hover h5 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.project-hover h5 a {
+  color: white;
+}
+.project-hover p {
+  color: white;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/*------ contact ------ */
+.contact-form {
+  margin-top: 40px;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  outline: 0;
+  border: 1px solid #aaaaaa;
+  padding: 12px;
+  color: #999999;
+  margin-bottom: 30px;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: 0;
+}
+.contact-form .button {
+  width: auto;
+  background: #5f6d7e;
+  color: white;
+  text-transform: uppercase;
+  border: 0;
+}
+
+/*---------------------------------------------------------
+ 5. Footer
+-------------------------------------------------------- */
+#footer p.copyright-text {
+  margin: 40px 0;
+  font-size: 13px;
+}
+#footer p.copyright-text a {
+  color: #5f6d7e;
+}
+#footer p.copyright-text a:hover {
+  color: #6cc0f7;
+}
